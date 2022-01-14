@@ -2,14 +2,15 @@ import React from 'react'
 import '../css/MustReadContainer.css'
 import MustReads from './MustReads'
 
-const MustReadContainer = ({ mustReads }) => {
+const MustReadContainer = ({ mustReads, addToReadBooks }) => {
 
-	const displayMustReads = mustReads.map((book) => {
+	const displayMustReads = mustReads.map((book, index) => {
 		return <MustReads 
 			book={book}
-			key={book.rank} 
+			key={index} 
 			image={book.image}
 			title={book.title}
+			addToReadBooks={addToReadBooks}
 		/>
 	})
 

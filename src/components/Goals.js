@@ -1,9 +1,9 @@
 import React from 'react'
 import '../css/Goals.css'
 
-const Goals = ({ goal }) => {
+const Goals = ({ goal, readBooks }) => {
 	return (
-		<p>read 2 of your {goal} goal</p>
+		<p>read {readBooks} of your {goal} goal</p>
 	)
 }
 
