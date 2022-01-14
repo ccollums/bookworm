@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import '../css/App.css'
 import Form from './Form'
 import Nav from './Nav'
@@ -52,16 +53,23 @@ const App = () => {
 
   return (
     <section className='app'>
-      <div className='left-side'>
-        <Nav />
-        <h2>Best Seller's List</h2>
-        <Goals goal={userData.goal}/>
-        <Form addGoal={addGoal}/>
-        <div className='bottom-box'>
-          <p>Click books to add to your must read list!</p>
-        </div>
-      </div>
-      <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
+      <Routes>
+        <Route path='/' element={
+        <React.Fragment>
+          <div className='left-side'>
+            <Nav />
+            <h2>Best Seller's List</h2>
+            <Goals goal={userData.goal}/>
+            <Form addGoal={addGoal}/>
+            <div className='bottom-box'>
+              <p>Click books to add to your must read list!</p>
+            </div>
+          </div>
+          <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
+        </React.Fragment>}/>
+        <Route path='/must-read' element={<MustReadsPage />}/>
+        <Route path='/about' element={<AboutPage />}/>
+      </Routes>
     </section>
   )
 }
