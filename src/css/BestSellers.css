@@ -1,3 +1,10 @@
-p {
-	border: solid 2px green;
+.book-cover {
+	height: 50vh;
+	cursor: pointer;
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
+}
+
+.book-cover:hover {
+  transition: .5s ease-in-out;
+  transform: scale(1.2);
 }
