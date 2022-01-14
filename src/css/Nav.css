@@ -1,6 +1,17 @@
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 56vw;
-	border: solid 2px red;
+}
+
+.links {
+	text-decoration: none;
+	color: black;
+	margin: 0 0 0 4em;
+}
+
+h1 {
+	font-size: 200%;
+	margin: 0;
 }

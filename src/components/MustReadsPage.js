@@ -9,12 +9,14 @@ const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks }) => {
 		<section className='must-read-page'>
 			<div className='left-side'>
 				<Nav />
-				<h2>Your Must Read Books</h2>
-				<Goals goal={goal} readBooks={readBooks}/>
-				<div className='bottom-box'>
-              <p>Click books you've completed to add to your goal!</p>
-            </div>
-			</div>
+				<div className='page-info'>
+					<h2>Your Must Read Books</h2>
+					<Goals goal={goal} readBooks={readBooks}/>
+					<div className='bottom-box'>
+						<p>Click books you've completed to add to your goal!</p>
+					</div>
+				</div>
+				</div>
 			<MustReadContainer mustReads={mustReads} addToReadBooks={addToReadBooks}/>
 		</section>
 	)
