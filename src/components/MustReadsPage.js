@@ -4,7 +4,7 @@ import MustReadContainer from './MustReadContainer'
 import Nav from './Nav'
 import Goals from './Goals'
 
-const MustReadsPage = () => {
+const MustReadsPage = ({ mustReads }) => {
 	return (
 		<section className='must-read-page'>
 			<div className='left-side'>
@@ -12,7 +12,7 @@ const MustReadsPage = () => {
 				<h2>Your Must Read Books</h2>
 				<Goals />
 			</div>
-			<MustReadContainer />
+			<MustReadContainer mustReads={mustReads}/>
 		</section>
 	)
 }

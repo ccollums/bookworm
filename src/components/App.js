@@ -67,7 +67,7 @@ const App = () => {
           </div>
           <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
         </React.Fragment>}/>
-        <Route path='/must-reads' element={<MustReadsPage />}/>
+        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
       </Routes>
     </section>

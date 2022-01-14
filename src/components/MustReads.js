@@ -1,9 +1,9 @@
 import React from 'react'
 import '../css/MustReads.css'
 
-const MustReads = () => {
+const MustReads = ({ image, title }) => {
 	return (
-		<p>must reads</p>
+		<img className='book-cover' src={image} alt={title}/>
 	)
 }
 
