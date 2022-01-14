@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <section className='app'>
-      <Routes>
+       <Routes>
         <Route path='/' element={
         <React.Fragment>
           <div className='left-side'>
@@ -67,7 +67,7 @@ const App = () => {
           </div>
           <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
         </React.Fragment>}/>
-        <Route path='/must-read' element={<MustReadsPage />}/>
+        <Route path='/must-reads' element={<MustReadsPage />}/>
         <Route path='/about' element={<AboutPage />}/>
       </Routes>
     </section>
