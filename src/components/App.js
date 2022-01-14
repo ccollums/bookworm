@@ -9,8 +9,15 @@ import Goals from './Goals'
 
 const App = () => {
   const [nytBooks, setNytBooks] = useState([])
-  const [goal, setGoal] = useState(0)
-  const [userBooks, setUserBooks] = useState([])
+  const [userData, setUserData] = useState(() => {
+    const saved = localStorage.getItem("storedData");
+    const existingUserData = JSON.parse(saved);
+    return existingUserData || {goal: 0, mustReads: []}
+  })
+  
+  // const [goal, setGoal] = useState(0)
+
+  // const [userBooks, setUserBooks] = useState([])
 
   const fetchBooks = async () => {
     try {
@@ -31,12 +38,20 @@ const App = () => {
     }
   }
 
-  // useEffect(() => {
-  //   fetchBooks()
-  // }, [])
+  useEffect(() => {
+    fetchBooks()
+  }, [])
 
-  const addGoal = (goal) => {
-    setGoal(goal)
+  useEffect(() => {
+    localStorage.setItem("storedData", JSON.stringify(userData))
+  }, [userData])
+
+  const addGoal = (userGoal) => {
+    setUserData({...userData, goal: userGoal})
+  }
+
+  const addToMustReads = (addedBook) => {
+    setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
   }
 
   return (
@@ -44,13 +59,13 @@ const App = () => {
       <div className='left-side'>
         <Nav />
         <h2>Best Seller's List</h2>
-        <Goals goal={goal}/>
+        <Goals goal={userData.goal}/>
         <Form addGoal={addGoal}/>
         <div className='bottom-box'>
           <p>Click books to add to your must read list!</p>
         </div>
       </div>
-      <NYTContainer />
+      <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
     </section>
   )
 }

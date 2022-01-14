@@ -1,13 +1,12 @@
 .app {
   display: flex;
-  border: solid 2px blue;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .left-side {
   width: 56vw;
-  border: solid 2px red;
   display: flex;
   flex-direction: column;
   align-items: center;

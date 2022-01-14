@@ -1,13 +1,15 @@
 import React from 'react'
 import '../css/BestSellers.css'
 
-const BestSellers = () => {
+const BestSellers = ({ image, title, book, addToMustReads }) => {
+
+	const saveBook = () => {
+		addToMustReads(book)
+	}
+
 	return (
 		<section>
-			<p>best sellers</p>
-			<p>number 2</p>
-			<p>best sellers</p>
-			<p>number 2</p>
+			<img className='book-cover' src={image} alt={title} onClick={saveBook}/>
 		</section>
 	)
 }

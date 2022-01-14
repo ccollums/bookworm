@@ -3,7 +3,9 @@
 	width: 44vw;
 	padding: 35px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   justify-items: center;
-  gap: 1% 2%;
+  gap: 10% 5%;
+  overflow: scroll;
+  margin: .5em;
 }
