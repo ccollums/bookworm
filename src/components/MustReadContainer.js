@@ -2,11 +2,21 @@ import React from 'react'
 import '../css/MustReadContainer.css'
 import MustReads from './MustReads'
 
-const MustReadContainer = () => {
+const MustReadContainer = ({ mustReads, addToReadBooks }) => {
+
+	const displayMustReads = mustReads.map((book, index) => {
+		return <MustReads 
+			book={book}
+			key={index} 
+			image={book.image}
+			title={book.title}
+			addToReadBooks={addToReadBooks}
+		/>
+	})
+
 	return (
-		<section>
-			<p>must read container</p>
-			<MustReads />
+		<section className='container'>
+			{displayMustReads}
 		</section>
 	)
 }

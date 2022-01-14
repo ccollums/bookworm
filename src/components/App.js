@@ -13,7 +13,7 @@ const App = () => {
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("storedData");
     const existingUserData = JSON.parse(saved);
-    return existingUserData || { goal: 0, mustReads: [] }
+    return existingUserData || { goal: 0, readBooks: 0, mustReads: [] }
   })
 
   const fetchBooks = async () => {
@@ -51,15 +51,19 @@ const App = () => {
     setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
   }
 
+  const addToReadBooks = () => {
+    setUserData({...userData, readBooks: userData.readBooks + 1})
+  }
+
   return (
     <section className='app'>
-      <Routes>
+       <Routes>
         <Route path='/' element={
         <React.Fragment>
           <div className='left-side'>
             <Nav />
             <h2>Best Seller's List</h2>
-            <Goals goal={userData.goal}/>
+            <Goals goal={userData.goal} readBooks={userData.readBooks}/>
             <Form addGoal={addGoal}/>
             <div className='bottom-box'>
               <p>Click books to add to your must read list!</p>
@@ -67,7 +71,7 @@ const App = () => {
           </div>
           <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
         </React.Fragment>}/>
-        <Route path='/must-read' element={<MustReadsPage />}/>
+        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks}/>}/>
         <Route path='/about' element={<AboutPage />}/>
       </Routes>
     </section>
