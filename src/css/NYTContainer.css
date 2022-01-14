@@ -1,0 +1,9 @@
+.container {
+	background-color: #FAF8F4;
+	width: 44vw;
+	padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  justify-items: center;
+  gap: 1% 2%;
+}
