@@ -3,7 +3,13 @@ import '../css/Goals.css'
 
 const Goals = ({ goal, readBooks }) => {
 	return (
-		<p>read {readBooks} of your {goal} goal</p>
+		<div className='goal-sentence'>
+			<p>read</p>
+			<p className='number'>{readBooks}</p>
+			<p>of your</p>
+			<p className='number'>{goal}</p>
+			<p>goal</p>
+		</div>
 	)
 }
 

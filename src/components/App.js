@@ -62,11 +62,13 @@ const App = () => {
         <React.Fragment>
           <div className='left-side'>
             <Nav />
-            <h2>Best Seller's List</h2>
-            <Goals goal={userData.goal} readBooks={userData.readBooks}/>
-            <Form addGoal={addGoal}/>
-            <div className='bottom-box'>
-              <p>Click books to add to your must read list!</p>
+            <div className='page-info'>
+              <h2>Best Seller's List</h2>
+              <Goals goal={userData.goal} readBooks={userData.readBooks}/>
+              <Form addGoal={addGoal}/>
+              <div className='bottom-box'>
+                <p>Click books to add to your must read list!</p>
+              </div>
             </div>
           </div>
           <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>

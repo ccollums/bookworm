@@ -7,8 +7,10 @@ const AboutPage = () => {
 		<section className='about-page'>
 			<div className='left-side'>
 				<Nav />
-				<h2>About</h2>
-				<p>it is me</p>
+				<div className='page-info'>
+					<h2>About</h2>
+					<p>it is me</p>
+				</div>
 			</div>
 			<div className='container'>
 				<p>1</p>

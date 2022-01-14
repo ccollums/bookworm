@@ -1,0 +1,14 @@
+.goal-sentence {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin: 5em;
+}
+
+.goal-sentence p {
+	margin: 0 .5em 0 .5em;
+}
+
+.number {
+	font-size: 400%;
+}
