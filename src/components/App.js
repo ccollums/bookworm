@@ -12,12 +12,8 @@ const App = () => {
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("storedData");
     const existingUserData = JSON.parse(saved);
-    return existingUserData || {goal: 0, mustReads: []}
+    return existingUserData || { goal: 0, mustReads: [] }
   })
-  
-  // const [goal, setGoal] = useState(0)
-
-  // const [userBooks, setUserBooks] = useState([])
 
   const fetchBooks = async () => {
     try {
