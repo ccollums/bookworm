@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Goals.css'
+import propTypes from 'prop-types';
 
 const Goals = ({ goal, readBooks }) => {
 	return (
@@ -14,3 +15,8 @@ const Goals = ({ goal, readBooks }) => {
 }
 
 export default Goals;
+
+Goals.propTypes = {
+  goal: propTypes.number.isRequired,
+	readBooks: propTypes.number.isRequired,
+};

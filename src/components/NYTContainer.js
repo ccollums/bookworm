@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/NYTContainer.css'
 import BestSellers from './BestSellers'
+import propTypes from 'prop-types';
 
 const NYTContainer = ({ nytBooks, addToMustReads }) => {
 
@@ -23,3 +24,8 @@ const NYTContainer = ({ nytBooks, addToMustReads }) => {
 }
 
 export default NYTContainer; 
+
+NYTContainer.propTypes = {
+  nytBooks: propTypes.array.isRequired,
+	addToMustReads: propTypes.func.isRequired,
+};

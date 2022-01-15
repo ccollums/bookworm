@@ -5,6 +5,7 @@ import MustReadContainer from './MustReadContainer'
 import Nav from './Nav'
 import Goals from './Goals'
 import background from '../images/background.png'
+import propTypes from 'prop-types';
 
 const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks, clearMustReads }) => {
 	return (
@@ -29,5 +30,12 @@ const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks, clearMustRe
 	)
 }
 
-
 export default MustReadsPage;
+
+MustReadsPage.propTypes = {
+  mustReads: propTypes.array.isRequired,
+  goal: propTypes.number.isRequired,
+  readBooks: propTypes.number.isRequired,
+  addToReadBooks: propTypes.func.isRequired,
+	clearMustReads: propTypes.func.isRequired,
+};

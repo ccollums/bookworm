@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/MustReadContainer.css'
 import MustReads from './MustReads'
+import propTypes from 'prop-types';
 
 const MustReadContainer = ({ mustReads, addToReadBooks }) => {
 
@@ -22,3 +23,8 @@ const MustReadContainer = ({ mustReads, addToReadBooks }) => {
 }
 
 export default MustReadContainer; 
+
+MustReadContainer.propTypes = {
+  mustReads: propTypes.array.isRequired,
+	addToReadBooks: propTypes.func.isRequired,
+};

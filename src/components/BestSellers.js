@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/BestSellers.css'
+import propTypes from 'prop-types';
 
 const BestSellers = ({ image, title, book, addToMustReads }) => {
 
@@ -15,3 +16,10 @@ const BestSellers = ({ image, title, book, addToMustReads }) => {
 }
 
 export default BestSellers; 
+
+BestSellers.propTypes = {
+  image: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+  book: propTypes.object.isRequired,
+  addToMustReads: propTypes.func.isRequired,
+};
