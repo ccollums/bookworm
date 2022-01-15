@@ -56,6 +56,10 @@ const App = () => {
     setUserData({...userData, readBooks: userData.readBooks + 1})
   }
 
+  const clearMustReads = () => {
+    setUserData({ goal: 0, readBooks: 0, mustReads: [] })
+  }
+
   return (
     <section className='app'>
        <Routes>
@@ -74,7 +78,7 @@ const App = () => {
           </div>
           <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
         </React.Fragment>}/>
-        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks}/>}/>
+        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
       </Routes>
     </section>
