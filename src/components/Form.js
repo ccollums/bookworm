@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/Form.css'
+import propTypes from 'prop-types';
 
 const Form = ({ addGoal }) => {
 	const [goalInput, setGoalInput] = useState('')
@@ -36,3 +37,7 @@ const Form = ({ addGoal }) => {
 
 
 export default Form;
+
+Form.propTypes = {
+  addGoal: propTypes.func.isRequired,
+};
