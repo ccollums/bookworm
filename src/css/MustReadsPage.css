@@ -1,0 +1,16 @@
+.right-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #FAF8F4;
+	/* width: 44vw; */
+	font-size: 200%;
+	text-align: center;
+	margin: 0;
+}
+
+.link {
+	text-decoration: none;
+	color: #3339A6;
+}

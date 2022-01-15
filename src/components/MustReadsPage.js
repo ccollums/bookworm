@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../css/MustReadsPage.css'
 import MustReadContainer from './MustReadContainer'
 import Nav from './Nav'
@@ -19,7 +20,11 @@ const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks, clearMustRe
 					</div>
 				</div>
 				</div>
-			<MustReadContainer mustReads={mustReads} addToReadBooks={addToReadBooks}/>
+					{mustReads.length ? <MustReadContainer mustReads={mustReads} addToReadBooks={addToReadBooks}/> :
+					<div className='right-side'>
+					<p>Go <Link to='/' className='link'> Home</Link> and add some books to your must read list!</p>			
+					</div>}
+				
 		</section>
 	)
 }
