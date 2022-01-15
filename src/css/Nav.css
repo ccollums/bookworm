@@ -6,7 +6,9 @@ header {
 	position: relative;
 }
 
-h1 {
+.title {
+	text-decoration: none;
 	font-size: 200%;
 	margin: 0;
+	color: black;
 }
