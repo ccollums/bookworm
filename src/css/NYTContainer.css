@@ -1,11 +1,11 @@
 .container {
 	background-color: #FAF8F4;
 	width: 44vw;
+  height: 100vh;
 	padding: 35px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   justify-items: center;
   gap: 10% 5%;
   overflow: scroll;
-  margin: .5em;
 }
