@@ -7,6 +7,7 @@ import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
+import background from '../images/background.png'
 
 const App = () => {
   const [nytBooks, setNytBooks] = useState([])
@@ -60,7 +61,7 @@ const App = () => {
        <Routes>
         <Route path='/' element={
         <React.Fragment>
-          <div className='left-side'>
+          <div className='left-side' style={{ backgroundImage: `url(${background})`}}>
             <Nav />
             <div className='page-info'>
               <h2>Best Seller's List</h2>

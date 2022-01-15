@@ -5,6 +5,7 @@ input {
 	height: 50px;
 	margin-right: 3em;
 	text-align: center;
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
 }
 
 button {
@@ -13,4 +14,11 @@ button {
 	background-color: #F6E29E;
 	height: 55px;
 	width: 180px;
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
+	cursor: pointer;
+}
+
+button:hover {
+  transition: .5s ease-in-out;
+  transform: scale(1.2);
 }
