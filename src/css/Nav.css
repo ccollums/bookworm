@@ -3,12 +3,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	width: 56vw;
-}
-
-.links {
-	text-decoration: none;
-	color: black;
-	margin: 0 0 0 4em;
+	position: relative;
 }
 
 h1 {
