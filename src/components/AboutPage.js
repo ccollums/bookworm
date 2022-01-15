@@ -16,11 +16,12 @@ import River from '../images/river.png'
 import Untamed from '../images/untamed.png'
 import Vanishing from '../images/vanishing.png'
 import Carly from '../images/carly.png'
+import background from '../images/background.png'
 
 const AboutPage = () => {
 	return (
 		<section className='about-page'>
-			<div className='left-side'>
+			<div className='left-side' style={{ backgroundImage: `url(${background})` }}>
 				<Nav />
 				<div className='page-info about'>
 					<h2>About</h2>

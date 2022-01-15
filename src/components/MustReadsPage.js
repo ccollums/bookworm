@@ -3,11 +3,12 @@ import '../css/MustReadsPage.css'
 import MustReadContainer from './MustReadContainer'
 import Nav from './Nav'
 import Goals from './Goals'
+import background from '../images/background.png'
 
 const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks }) => {
 	return (
 		<section className='must-read-page'>
-			<div className='left-side'>
+			<div className='left-side' style={{ backgroundImage: `url(${background})`}}>
 				<Nav />
 				<div className='page-info'>
 					<h2>Your Must Read Books</h2>

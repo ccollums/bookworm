@@ -4,6 +4,8 @@ header {
 	align-items: center;
 	width: 56vw;
 	position: relative;
+	padding-bottom: 1em;
+	background-color: white;
 }
 
 .title {
