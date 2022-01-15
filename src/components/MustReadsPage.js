@@ -11,8 +11,9 @@ const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks }) => {
 			<div className='left-side' style={{ backgroundImage: `url(${background})`}}>
 				<Nav />
 				<div className='page-info'>
-					<h2>Your Must Read Books</h2>
+					<h2>Your Must Reads</h2>
 					<Goals goal={goal} readBooks={readBooks}/>
+					<button>Clear All</button>
 					<div className='bottom-box'>
 						<p>Click books you've completed to add to your goal!</p>
 					</div>
