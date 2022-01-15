@@ -6,11 +6,9 @@ import Hamburger from './Hamburger'
 const Nav = () => {
 	return (
 		<header>
-			<h1>BookWorm</h1>
+			<Link to='/' className='title'>BookWorm</Link>
 			<div className='nav-pages'>
-				<Link to={'/'} className='links'>Home</Link>
-				<Link to={'/must-reads'} className='links'>Must Reads</Link>
-				<Link to={'/about'} className='links'>About</Link>
+				<Hamburger />
 			</div>
 		</header>
 	)

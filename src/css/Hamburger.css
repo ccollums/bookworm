@@ -1,0 +1,64 @@
+.links {
+	text-decoration: none;
+	color: black;
+	font-size: 200%;
+}
+
+.links:hover {
+	color: #3339A6;
+}
+
+.hamburger {
+	display: block;
+	cursor: pointer;
+}
+
+.hamburger-active {
+	cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin: 10px auto;
+  border-radius: .3em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.bar1 {
+	transform: rotate(0);
+}
+
+.bar2 {
+	transform: rotate(0);
+}
+
+.bar1-active {
+	transform: translateY(17px) rotate(45deg);
+}
+.bar2-active {
+	transform: translateY(3px) rotate(-45deg);
+}
+
+.nav-menu {
+	display: none;
+}
+
+.nav-menu-active {
+	background-color: white;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	height: 90vh;
+	width: 56vw;
+}
+
+div .nav-item {
+	margin: 30px;
+}
