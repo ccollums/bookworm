@@ -11,6 +11,7 @@
 .hamburger {
 	display: block;
 	cursor: pointer;
+	margin: 2em .7em 0 0;
 }
 
 .hamburger-active {

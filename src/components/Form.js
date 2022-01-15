@@ -29,7 +29,7 @@ const Form = ({ addGoal }) => {
 				value={goalInput}
 				onChange={e => setGoalInput(e.target.value)}/>
 			<button onClick={(e => submitGoal(e))}>Submit</button>
-			{error ? <p>Please add a goal!</p> : <p></p>}
+			{error ? <p className='error'>Please add a goal!</p> : <p style={{ opacity: "0" }}>Error placeholder</p>}
 		</form>
 	)
 }
