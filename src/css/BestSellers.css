@@ -9,3 +9,9 @@
   transition: .5s ease-in-out;
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 868px) {
+  .book-cover {
+		height: 55vh;
+	}
+}

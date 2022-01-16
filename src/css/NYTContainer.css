@@ -9,3 +9,14 @@
   gap: 10% 5%;
   overflow: scroll;
 }
+
+@media screen and (max-width: 868px) {
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    gap: 3% 3%;
+    padding: 0;
+    padding-top: 35px;
+  }
+}
