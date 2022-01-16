@@ -15,7 +15,7 @@ const MustReadsPage = ({ mustReads, goal, addToReadBooks, readBooks, clearMustRe
 				<div className='page-info'>
 					<h2>Your Must Reads</h2>
 					<Goals goal={goal} readBooks={readBooks}/>
-					<button onClick={() => clearMustReads()}>Clear Goals & Must Reads</button>
+					<button className='clear-button'onClick={() => clearMustReads()}>Clear Goals & Must Reads</button>
 					<div className='bottom-box'>
 						<p>Click books you've completed to add to your goal!</p>
 					</div>

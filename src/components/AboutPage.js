@@ -31,7 +31,6 @@ const AboutPage = () => {
 						oriented readers (or want to be readers) to track their progress.
 					</p>
 					<div className='bio'>
-						<div className='blob'></div>
 						<img className='headshot'src={Carly} alt='Carly Collums'/>
 						<p className='bio'>Hi! I'm Carly, a front-end software engineering student at Turing school of software and 
 						design. BookWorm was created as a final solo project to demonstarte my use of React, React Router, and Cypress.

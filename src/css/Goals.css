@@ -28,3 +28,9 @@
 		margin: 5em;
 	}
 }
+
+@media screen and (max-width: 375px) {
+  .goal-sentence {
+		margin: 3em;
+	}
+}

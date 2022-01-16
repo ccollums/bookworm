@@ -27,14 +27,25 @@
 .about {
 	margin-top: 4em;
 }
-/* 
-.blob {
-	border: solid 3px #F6E29E;
-	height: 40vh;
-	width: 30vw;
-	position: absolute;
-	top: 8%;
-	z-index: -1;
-	border-radius: 103% 40% 43% 38%;
-	transform: rotate(40%)
-} */
+
+@media screen and (max-width: 868px) {
+  .about-page {
+		flex-direction: column;
+	}
+
+	.app-summary {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 639px) {
+  .bio {
+		flex-direction: column;
+		width: 90vw;
+		text-align: center;
+	}
+
+	.app-summary {
+		width: 90vw;
+	}
+}
