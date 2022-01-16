@@ -7,6 +7,7 @@ import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
+import ErrorPage from './ErrorPage'
 import background from '../images/background.png'
 import { RiErrorWarningFill } from 'react-icons/ri';
 
@@ -21,7 +22,7 @@ const App = () => {
 
   const fetchBooks = async () => {
     try {
-      const booksData = await fetch('https://api.nytimes.com/svc/books//lists/2022-01-01/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z')
+      const booksData = await fetch('https://api.nytimes.com/svc/books/v3/lists/2022-01-01/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z')
       const books = await booksData.json()
       setNytBooks(books.results.books.map((book) => {
         return {
@@ -85,6 +86,7 @@ const App = () => {
         </React.Fragment>}/>
         <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
+        <Route path='/:invalidURL' element={<ErrorPage />}/>
       </Routes>
     </section>
   )
