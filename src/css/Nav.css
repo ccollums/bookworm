@@ -18,3 +18,9 @@ header {
 .title:hover {
 	color: #3339A6;
 }
+
+@media screen and (max-width: 868px) {
+ header {
+	 width: 100vw;
+ }
+}

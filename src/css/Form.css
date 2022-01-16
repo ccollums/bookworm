@@ -26,3 +26,15 @@ button:hover {
 .error {
 	text-align: center;
 }
+
+@media screen and (max-width: 435px) {
+  form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	input {
+		margin: 0 0 1em 0;
+	}
+}

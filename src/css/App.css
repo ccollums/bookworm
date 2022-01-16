@@ -42,6 +42,45 @@ h2 {
   margin: 0;
 }
 
+@media screen and (max-width: 868px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+    min-height: 100vh;
+  }
+
+  .left-side {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }	
+
+  .bottom-box {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  h2 {
+    font-size: 300%;
+  }
+}
+
+
+@media screen and (max-width: 435px) {
+ .bottom-box {
+   margin-top: 1em;
+ }
+}
+
+
+@media screen and (max-width: 360px) {
+  h2 {
+    font-size: 250%;
+  }
+
 .error-icon {
   color: #3339A6;
 }

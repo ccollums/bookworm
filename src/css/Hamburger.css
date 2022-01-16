@@ -63,3 +63,10 @@
 div .nav-item {
 	margin: 30px;
 }
+
+@media screen and (max-width: 868px) {
+  .nav-menu-active {
+		width: 100vw;
+		min-height: 100vh;
+	}	
+}
