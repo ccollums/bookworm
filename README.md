@@ -10,7 +10,7 @@
   - [Site Overview](#Site-Overview)
   - [Wins and Challenges](#Wins-And-Challenges)
   - [Future Improvements](#Future-Improvements)
-  - [Authors](#Authors)
+  - [Author](#Author)
 
 ## Introduction 
 
@@ -82,7 +82,7 @@ Scroll down for screenshots:
 ## Future Improvements
 Now that our MVP functionality has been built out, there is still so much we would love to add in the future! 
 
-## Authors 
+## Author
 
 <table>
   <tr>
