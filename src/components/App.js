@@ -7,10 +7,13 @@ import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
+import ErrorPage from './ErrorPage'
 import background from '../images/background.png'
+import { RiErrorWarningFill } from 'react-icons/ri';
 
 const App = () => {
   const [nytBooks, setNytBooks] = useState([])
+  const [error, setError] = useState('')
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("storedData");
     const existingUserData = JSON.parse(saved);
@@ -32,7 +35,7 @@ const App = () => {
         }
       }))
     } catch (err) {
-      console.log(err)
+      setError(err.message)
     }
   }
 
@@ -49,7 +52,9 @@ const App = () => {
   }
 
   const addToMustReads = (addedBook) => {
-    setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
+    if (!userData.mustReads.includes(addedBook)) {
+      setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
+    }
   }
 
   const addToReadBooks = () => {
@@ -76,10 +81,14 @@ const App = () => {
               </div>
             </div>
           </div>
-          <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>
+          { error ? <div className='right-side'>
+          <RiErrorWarningFill size={150} className='error-icon'/>
+          <p>Oops, something went wrong, please try again!</p> 
+          </div> : <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>}
         </React.Fragment>}/>
         <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
+        <Route path='/:invalidURL' element={<ErrorPage />}/>
       </Routes>
     </section>
   )
