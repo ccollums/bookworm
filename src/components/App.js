@@ -7,7 +7,7 @@ import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
-import ErrorPage from './ErrorPage'
+import ErrorPage from './ErrorPage.js'
 import background from '../images/background.png'
 import { RiErrorWarningFill } from 'react-icons/ri';
 
