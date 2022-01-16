@@ -42,6 +42,10 @@ h2 {
   margin: 0;
 }
 
+.error-icon {
+  color: #3339A6;
+}
+
 @media screen and (max-width: 868px) {
   .app {
     display: flex;
@@ -80,7 +84,4 @@ h2 {
   h2 {
     font-size: 250%;
   }
-
-.error-icon {
-  color: #3339A6;
 }
