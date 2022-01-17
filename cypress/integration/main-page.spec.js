@@ -41,6 +41,16 @@ it('When a user types in a goal and hits submit their goal updates on the page',
   cy.get('.goal-sentence > :nth-child(4)').contains(10)
 })
 
+it.skip('should be able to click the best sellers novels', () => {
 
+})
+
+it.skip('should display an error message if the incorrect URL is used', () => {
+  cy.visit('http://localhost:3000/banana')
+});
+
+it.skip('should display an error if something goes wrong with the server', () => {
+  
+})
 
 })

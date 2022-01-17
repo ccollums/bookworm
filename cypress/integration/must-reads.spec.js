@@ -35,4 +35,12 @@ describe('main page', () => {
 		cy.get('.goal-sentence > :nth-child(4)').contains(0)
 	})
 
+	it.skip('should be able to click one of the books and it update the books read goal', () => {
+
+	})
+
+	it.skip('when a book is clicked it is removed from the page', () => {
+
+	})
+
 })
