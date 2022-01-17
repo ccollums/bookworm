@@ -20,7 +20,10 @@ it('should contain title of the application, a form, button, and the best seller
   cy.get('input').should('be.visible')
   cy.get('button').should('be.visible')
   cy.get('.bottom-box').contains('Click books to add to your must read list!')
-  cy.get('.nav-pages')
+  cy.get('.hamburger').click()
+  cy.get(':nth-child(1) > .links').contains('Home')
+  cy.get(':nth-child(2) > .links').contains('Must Reads')
+  cy.get(':nth-child(3) > .links').contains('About')
 })
 
 it('When the submit button is pushed without writing in the input, an error message appears', () => {
@@ -36,7 +39,6 @@ it('When a user types in a goal and hits submit their goal updates on the page',
   cy.get('input').type(10).should('have.value', 10)
   cy.get('button').click()
   cy.get('.goal-sentence > :nth-child(4)').contains(10)
-
 })
 
 
