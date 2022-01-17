@@ -9,6 +9,7 @@ describe('main page', () => {
 			cy.get('input').type(10).should('have.value', 10)
 			cy.get('button').click()
 			cy.get('.goal-sentence > :nth-child(4)').contains(10)
+			cy.get(':nth-child(1) > .book-cover').click()
 			cy.get('.hamburger').click()
 			cy.get(':nth-child(2) > .links').click()
 		})
@@ -24,23 +25,29 @@ describe('main page', () => {
 		cy.get('.goal-sentence > :nth-child(5)').contains('goal')
 		cy.get('button').should('be.visible')
 		cy.get('.bottom-box').contains(`Click books you've completed to add to your goal`)
+		cy.get('.book-cover').should('be.visible')
 		cy.get('.hamburger')
 		cy.get(':nth-child(1) > .links').contains('Home')
 		cy.get(':nth-child(2) > .links').contains('Must Reads')
 		cy.get(':nth-child(3) > .links').contains('About')
 	})
 
+	it('should be able to click one of the books and it update the books read goal', () => {
+		cy.get('.book-cover').click()
+		cy.get('.goal-sentence > :nth-child(2)').contains(1)
+	})
+
 	it('When the clear button gets clicked, it will clear the goals and must reads', () => {
 		cy.get('.clear-button').click()
+		cy.get('.goal-sentence > :nth-child(2)').contains(0)
 		cy.get('.goal-sentence > :nth-child(4)').contains(0)
+		cy.get('.right-side > p').contains('Go Home and add some books to your must read list!')
 	})
 
-	it.skip('should be able to click one of the books and it update the books read goal', () => {
-
-	})
-
-	it.skip('when a book is clicked it is removed from the page', () => {
-
+	it('once the must reads are cleared the user can click the home button to go back to the main page', () => {
+		cy.get('.clear-button').click()
+		cy.get('.link').click()
+		cy.get('h2').contains(`Best Seller's List`)
 	})
 
 })

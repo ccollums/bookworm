@@ -1,0 +1,11 @@
+.read-book-cover {
+	height: 50vh;
+	box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
+	margin-bottom: 5em;
+	opacity: .4;
+}
+
+.read {
+	position: absolute;
+	z-index: 1;
+}

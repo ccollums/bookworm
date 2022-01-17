@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/MustReads.css'
 import propTypes from 'prop-types';
 
 const MustReads = ({ image, title, addToReadBooks }) => {
+	const [read, setRead] = useState('')
+
+	const markBookRead = () => {
+		setRead('read')
+		addToReadBooks()
+	}
 
 	return (
-		<img className='book-cover' src={image} alt={title} onClick={() => addToReadBooks()}/>
+		<React.Fragment>
+			{!read ? <img className='book-cover' src={image} alt={title} onClick={markBookRead}/> :
+				<div>
+					<img className='read-book-cover' src={image} alt={title}/>
+					<p className='read'>READ</p>
+				</div>
+			}
+		</React.Fragment>
 	)
 }
 

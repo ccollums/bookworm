@@ -52,7 +52,7 @@ const App = () => {
   }
 
   const addToMustReads = (addedBook) => {
-    if (!userData.mustReads.includes(addedBook)) {
+    if (!userData.mustReads.includes(addedBook.title)) {
       setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
     }
   }
