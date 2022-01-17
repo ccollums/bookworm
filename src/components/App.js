@@ -17,7 +17,7 @@ const App = () => {
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("storedData");
     const existingUserData = JSON.parse(saved);
-    return existingUserData || { goal: 0, readBooks: 0, mustReads: [] }
+    return existingUserData || { goal: 0, readBooks: 0, mustReads: [], readList: [] }
   })
 
   const fetchBooks = async () => {
@@ -57,12 +57,14 @@ const App = () => {
     }
   }
 
-  const addToReadBooks = () => {
-    setUserData({...userData, readBooks: userData.readBooks + 1})
+  const addToReadBooks = (completedBook) => {
+    if (!userData.readList.includes(completedBook)) {
+      setUserData({...userData, readBooks: userData.readBooks + 1, readList: [...userData.readList, completedBook]})
+    }
   }
 
   const clearMustReads = () => {
-    setUserData({ goal: 0, readBooks: 0, mustReads: [] })
+    setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [] })
   }
 
   return (
