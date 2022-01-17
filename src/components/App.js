@@ -22,7 +22,7 @@ const App = () => {
 
   const fetchBooks = async () => {
     try {
-      const booksData = await fetch('https://api.nytimes.com/svc/books/v3/lists/2022-01-01/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z')
+      const booksData = await fetch('https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z')
       const books = await booksData.json()
       setNytBooks(books.results.books.map((book) => {
         return {
