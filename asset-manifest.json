@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bookworm/static/css/main.e69bd9ae.css",
-    "main.js": "/bookworm/static/js/main.c75309be.js",
+    "main.js": "/bookworm/static/js/main.b27d436e.js",
     "static/media/river.png": "/bookworm/static/media/river.498d3e7f1841b8247738.png",
     "static/media/greatalone.png": "/bookworm/static/media/greatalone.e76018077774a6417dbb.png",
     "static/media/Addie.png": "/bookworm/static/media/Addie.d60e2e16c289e8ab118a.png",
@@ -20,10 +20,10 @@
     "static/media/dune.png": "/bookworm/static/media/dune.887846fdf4b7e69c6e51.png",
     "index.html": "/bookworm/index.html",
     "main.e69bd9ae.css.map": "/bookworm/static/css/main.e69bd9ae.css.map",
-    "main.c75309be.js.map": "/bookworm/static/js/main.c75309be.js.map"
+    "main.b27d436e.js.map": "/bookworm/static/js/main.b27d436e.js.map"
   },
   "entrypoints": [
     "static/css/main.e69bd9ae.css",
-    "static/js/main.c75309be.js"
+    "static/js/main.b27d436e.js"
   ]
 }
