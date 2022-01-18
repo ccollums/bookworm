@@ -86,6 +86,7 @@ const App = () => {
             <Nav />
             <div className='page-info'>
               <h2>Best Seller's List</h2>
+              <p className='description'>Scroll through NYT’s current hardcover fiction best sellers!</p>
               <Goals goal={userData.goal} readBooks={userData.readBooks}/>
               <Form addGoal={addGoal}/>
               <div className='bottom-box'>
