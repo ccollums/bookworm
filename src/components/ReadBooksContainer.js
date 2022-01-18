@@ -1,14 +1,12 @@
 import React from 'react'
-import '../css/ReadBooksContainer.css'
 import ReadBooks from './ReadBooks'
 import propTypes from 'prop-types';
 
 const ReadBooksContainer = ({ readList }) => {
 
 	const displayReadBooks = readList.map((book, index) => {
-		return <ReadBooks 
-			book={book}
-			key={index} 
+		return <ReadBooks
+			key={index}
 			image={book.image}
 			title={book.title}
 		/>
@@ -21,8 +19,8 @@ const ReadBooksContainer = ({ readList }) => {
 	)
 }
 
-export default ReadBooksContainer; 
+export default ReadBooksContainer;
 
 ReadBooksContainer.propTypes = {
-  readList: propTypes.array.isRequired,
+	readList: propTypes.array.isRequired,
 };

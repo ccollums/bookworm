@@ -6,9 +6,9 @@ import propTypes from 'prop-types';
 const MustReadContainer = ({ mustReads, addToReadBooks }) => {
 
 	const displayMustReads = mustReads.map((book, index) => {
-		return <MustReads 
+		return <MustReads
 			book={book}
-			key={index} 
+			key={index}
 			image={book.image}
 			title={book.title}
 			addToReadBooks={addToReadBooks}
@@ -22,9 +22,9 @@ const MustReadContainer = ({ mustReads, addToReadBooks }) => {
 	)
 }
 
-export default MustReadContainer; 
+export default MustReadContainer;
 
 MustReadContainer.propTypes = {
-  mustReads: propTypes.array.isRequired,
+	mustReads: propTypes.array.isRequired,
 	addToReadBooks: propTypes.func.isRequired,
 };

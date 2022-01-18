@@ -8,13 +8,12 @@ import { RiErrorWarningFill } from 'react-icons/ri';
 const ErrorPage = () => {
 	return (
 		<section className='error-page'>
-			<div className='left-side' style={{ backgroundImage: `url(${background})`}}>
-            <Nav />
-            
-          </div>
+			<div className='left-side' style={{ backgroundImage: `url(${background})` }}>
+				<Nav />
+			</div>
 			<div className='right-side-error-page'>
-				<RiErrorWarningFill className='error-icon'size={150}/>
-				<p>Oops, wrong link! Go  <Link to='/' className='link'> Home</Link></p>			
+				<RiErrorWarningFill className='error-icon' size={150} />
+				<p>Oops, wrong link! Go  <Link to='/' className='link'> Home</Link></p>
 			</div>
 		</section>
 	)

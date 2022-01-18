@@ -10,16 +10,16 @@ const BestSellers = ({ image, title, book, addToMustReads }) => {
 
 	return (
 		<section>
-			<img className='book-cover' src={image} alt={title} onClick={saveBook}/>
+			<img className='book-cover' src={image} alt={title} onClick={saveBook} />
 		</section>
 	)
 }
 
-export default BestSellers; 
+export default BestSellers;
 
 BestSellers.propTypes = {
-  image: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-  book: propTypes.object.isRequired,
-  addToMustReads: propTypes.func.isRequired,
+	image: propTypes.string.isRequired,
+	title: propTypes.string.isRequired,
+	book: propTypes.object.isRequired,
+	addToMustReads: propTypes.func.isRequired,
 };

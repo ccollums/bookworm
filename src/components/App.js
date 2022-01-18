@@ -49,21 +49,21 @@ const App = () => {
   }, [userData])
 
   const addGoal = (userGoal) => {
-    setUserData({...userData, goal: userGoal})
+    setUserData({ ...userData, goal: userGoal })
   }
 
   const addToMustReads = (addedBook) => {
-    if (!userData.mustReads.find((book) => {return book.title === addedBook.title}) && 
-    !userData.readList.find((book) => {return book.title === addedBook.title})) {
-      setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
+    if (!userData.mustReads.find((book) => { return book.title === addedBook.title }) &&
+      !userData.readList.find((book) => { return book.title === addedBook.title })) {
+      setUserData({ ...userData, mustReads: [...userData.mustReads, addedBook] })
     }
   }
 
   const addToReadBooks = (completedBook) => {
-    if (!userData.readList.find((book) => {return book.title === completedBook.title})) {
+    if (!userData.readList.find((book) => { return book.title === completedBook.title })) {
       const foundBook = userData.mustReads.indexOf(completedBook)
       const filterMustReads = userData.mustReads.splice(foundBook, 1)
-      setUserData({...userData, readBooks: userData.readBooks + 1, readList: [...userData.readList, completedBook]})
+      setUserData({ ...userData, readBooks: userData.readBooks + 1, readList: [...userData.readList, completedBook] })
     }
   }
 
@@ -79,30 +79,30 @@ const App = () => {
 
   return (
     <section className='app'>
-       <Routes>
+      <Routes>
         <Route path='/' element={
-        <React.Fragment>
-          <div className='left-side' style={{ backgroundImage: `url(${background})`}}>
-            <Nav />
-            <div className='page-info'>
-              <h2>Best Seller's List</h2>
-              <p className='description'>Scroll through NYT’s current hardcover fiction best sellers!</p>
-              <Goals goal={userData.goal} readBooks={userData.readBooks}/>
-              <Form addGoal={addGoal}/>
-              <div className='bottom-box'>
-                <p>Click books to add to your must read list!</p>
+          <React.Fragment>
+            <div className='left-side' style={{ backgroundImage: `url(${background})` }}>
+              <Nav />
+              <div className='page-info'>
+                <h2>Best Seller's List</h2>
+                <p className='description'>Scroll through NYT’s current hardcover fiction best sellers!</p>
+                <Goals goal={userData.goal} readBooks={userData.readBooks} />
+                <Form addGoal={addGoal} />
+                <div className='bottom-box'>
+                  <p>Click books to add to your must read list!</p>
+                </div>
               </div>
             </div>
-          </div>
-          { error ? <div className='right-side'>
-          <RiErrorWarningFill size={150} className='error-icon'/>
-          <p>Oops, something went wrong, please try again!</p> 
-          </div> : <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads}/>}
-        </React.Fragment>}/>
-        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
-        <Route path='/about' element={<AboutPage />}/>
-        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal} clearReadBooks={clearReadBooks}/>}/>
-        <Route path='/:invalidURL' element={<ErrorPage />}/>
+            {error ? <div className='right-side'>
+              <RiErrorWarningFill size={150} className='error-icon' />
+              <p>Oops, something went wrong, please try again!</p>
+            </div> : <NYTContainer nytBooks={nytBooks} addToMustReads={addToMustReads} />}
+          </React.Fragment>} />
+        <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads} />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal} clearReadBooks={clearReadBooks} />} />
+        <Route path='/:invalidURL' element={<ErrorPage />} />
       </Routes>
     </section>
   )

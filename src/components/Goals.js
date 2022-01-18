@@ -17,6 +17,6 @@ const Goals = ({ goal, readBooks }) => {
 export default Goals;
 
 Goals.propTypes = {
-  goal: propTypes.number.isRequired,
+	goal: propTypes.number.isRequired,
 	readBooks: propTypes.number.isRequired,
 };

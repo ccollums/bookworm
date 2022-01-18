@@ -3,6 +3,11 @@ body {
   padding: 0;
 }
 
+h2 {
+  font-size: 400%;
+  margin: 0;
+}
+
 .app {
   display: flex;
   height: 100vh;
@@ -35,11 +40,6 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 3px 9px -3px rgba(0, 0, 0, .3);
-}
-
-h2 {
-  font-size: 400%;
-  margin: 0;
 }
 
 .error-icon {
