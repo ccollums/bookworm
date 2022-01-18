@@ -18,7 +18,7 @@ BookWorm is a web application created for a user to view the current New York Ti
 
 The inspiration behind BookWorm came from a love for reading along with a love for setting goals. Sites like GoodReads can feel overwhelming, with tons of information and a cluttered design. BookWorm has a very minimalist design in order to easily see the current top books, to make it easy to choose your next read. Goal setters, like myself, love to see their goal right in front of their face, BookWorm makes it easy to see your goal and how close you are to achieving it. 
 
-![Small GIF (400x210)](https://user-images.githubusercontent.com/86894344/150021672-cb7871c1-dca7-49a1-bfd4-915e94b098a0.gif)
+![Small GIF (400x210)](https://media.giphy.com/media/xlAPI3Ivd35vBBAFfk/giphy.gif)
 
 
 
