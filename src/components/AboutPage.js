@@ -36,7 +36,7 @@ const AboutPage = () => {
 							design. BookWorm was created as a final solo project to demonstarte my use of React, React Router, and Cypress.
 							I consider myself to be a positive, and compassionate software developer driven by an imaginative thinking
 							style and growth mindset. The inspiration behind BookWorm greatly came from my love for reading and for minimalist design.
-							If you are interested in knowing more about the project, visit the readme HERE</p>
+							</p>
 					</div>
 					<div className='bottom-box'>
 						<p>Scroll through some of my favorite novels!</p>
