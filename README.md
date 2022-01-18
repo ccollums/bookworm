@@ -94,7 +94,8 @@ Scroll down for screenshots:
 
 <img width="700" alt="Screen Shot 2022-01-18 at 1 07 42 PM" src="https://user-images.githubusercontent.com/86894344/150011095-a3159158-5d32-491d-a583-f20a2b992a0e.png">
 
-<img width="700" alt="Screen Shot 2022-01-18 at 1 08 57 PM" src="https://user-images.githubusercontent.com/86894344/150011099-549f2aa4-79c6-41e8-a1b7-73edfdad3e6b.png">
+<img width="1432" alt="Screen Shot 2022-01-18 at 1 31 03 PM" src="https://user-images.githubusercontent.com/86894344/150013918-0bb14eb8-159d-4a30-82c9-2249d9c149e9.png">
+
 
 ### Responsive Design
 <table>
