@@ -70,16 +70,16 @@ Scroll down for screenshots:
 
 ### Must Reads Page
 
-<img width="1433" alt="Screen Shot 2022-01-18 at 1 23 08 PM" src="https://user-images.githubusercontent.com/86894344/150013623-51732ce1-90a6-49a3-aa92-add954a81def.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 23 08 PM" src="https://user-images.githubusercontent.com/86894344/150013623-51732ce1-90a6-49a3-aa92-add954a81def.png">
 
-<img width="1434" alt="Screen Shot 2022-01-18 at 1 24 11 PM" src="https://user-images.githubusercontent.com/86894344/150013654-ad5dc727-9f55-4403-9714-26d319e09f94.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 24 11 PM" src="https://user-images.githubusercontent.com/86894344/150013654-ad5dc727-9f55-4403-9714-26d319e09f94.png">
 
 
 ### Completed Books Page 
 
-<img width="1434" alt="Screen Shot 2022-01-18 at 1 23 21 PM" src="https://user-images.githubusercontent.com/86894344/150013687-4d85096e-099c-4ae1-8552-edd932310410.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 23 21 PM" src="https://user-images.githubusercontent.com/86894344/150013687-4d85096e-099c-4ae1-8552-edd932310410.png">
 
-<img width="1433" alt="Screen Shot 2022-01-18 at 1 24 25 PM" src="https://user-images.githubusercontent.com/86894344/150013704-477ff89a-c98c-47f4-a6c0-9e8c1e16a3fa.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 24 25 PM" src="https://user-images.githubusercontent.com/86894344/150013704-477ff89a-c98c-47f4-a6c0-9e8c1e16a3fa.png">
 
 
 ### About Page 
@@ -94,7 +94,7 @@ Scroll down for screenshots:
 
 <img width="700" alt="Screen Shot 2022-01-18 at 1 07 42 PM" src="https://user-images.githubusercontent.com/86894344/150011095-a3159158-5d32-491d-a583-f20a2b992a0e.png">
 
-<img width="1432" alt="Screen Shot 2022-01-18 at 1 31 03 PM" src="https://user-images.githubusercontent.com/86894344/150013918-0bb14eb8-159d-4a30-82c9-2249d9c149e9.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 31 03 PM" src="https://user-images.githubusercontent.com/86894344/150013918-0bb14eb8-159d-4a30-82c9-2249d9c149e9.png">
 
 
 ### Responsive Design
@@ -111,7 +111,7 @@ Scroll down for screenshots:
 <table>
 <td><img width="285" alt="Screen Shot 2022-01-18 at 1 00 21 PM" src="https://user-images.githubusercontent.com/86894344/150010411-eeb27ae8-bb23-479b-a2e8-547b08cb3110.png"></td>
   
-<td><img width="306" alt="Screen Shot 2022-01-18 at 1 27 54 PM" src="https://user-images.githubusercontent.com/86894344/150014270-0338cb76-cd59-436e-89c3-d8d16bda4397.png"></td>
+<td><img width="285" alt="Screen Shot 2022-01-18 at 1 27 54 PM" src="https://user-images.githubusercontent.com/86894344/150014270-0338cb76-cd59-436e-89c3-d8d16bda4397.png"></td>
 
 <td><img width="285" alt="Screen Shot 2022-01-18 at 1 07 25 PM" src="https://user-images.githubusercontent.com/86894344/150011079-f8b07344-453c-4321-aeca-ef1dc4305edf.png"></td>
 </table>
