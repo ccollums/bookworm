@@ -53,13 +53,16 @@ const App = () => {
   }
 
   const addToMustReads = (addedBook) => {
-    if (!userData.mustReads.find((book) => {return book.title === addedBook.title})) {
+    if (!userData.mustReads.find((book) => {return book.title === addedBook.title}) && 
+    !userData.readList.find((book) => {return book.title === addedBook.title})) {
       setUserData({...userData, mustReads: [...userData.mustReads, addedBook]})
     }
   }
 
   const addToReadBooks = (completedBook) => {
     if (!userData.readList.find((book) => {return book.title === completedBook.title})) {
+      const foundBook = userData.mustReads.indexOf(completedBook)
+      const filterMustReads = userData.mustReads.splice(foundBook, 1)
       setUserData({...userData, readBooks: userData.readBooks + 1, readList: [...userData.readList, completedBook]})
     }
   }
