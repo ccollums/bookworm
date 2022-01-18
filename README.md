@@ -104,11 +104,11 @@ Scroll down for screenshots:
 <td><img width="296" alt="Screen Shot 2022-01-18 at 1 00 10 PM" src="https://user-images.githubusercontent.com/86894344/150010401-787dff2c-2f98-475c-a7b3-3c6023c22ea3.png"></td>
 </table>
 <table>
-<td><img width="296" alt="Screen Shot 2022-01-18 at 1 00 21 PM" src="https://user-images.githubusercontent.com/86894344/150010411-eeb27ae8-bb23-479b-a2e8-547b08cb3110.png"></td>
+<td><img width="285" alt="Screen Shot 2022-01-18 at 1 00 21 PM" src="https://user-images.githubusercontent.com/86894344/150010411-eeb27ae8-bb23-479b-a2e8-547b08cb3110.png"></td>
 
-<td><img width="296" alt="Screen Shot 2022-01-18 at 1 09 17 PM" src="https://user-images.githubusercontent.com/86894344/150011065-09e08499-ae25-4528-958f-0a96d254f26b.png"></td>
+<td><img width="285" alt="Screen Shot 2022-01-18 at 1 09 17 PM" src="https://user-images.githubusercontent.com/86894344/150011065-09e08499-ae25-4528-958f-0a96d254f26b.png"></td>
 
-<td><img width="296" alt="Screen Shot 2022-01-18 at 1 07 25 PM" src="https://user-images.githubusercontent.com/86894344/150011079-f8b07344-453c-4321-aeca-ef1dc4305edf.png"></td>
+<td><img width="285" alt="Screen Shot 2022-01-18 at 1 07 25 PM" src="https://user-images.githubusercontent.com/86894344/150011079-f8b07344-453c-4321-aeca-ef1dc4305edf.png"></td>
 </table>
 
 
