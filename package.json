@@ -1,5 +1,6 @@
 {
   "name": "bookworm",
+  "homepage": "https://ccollums.github.io/bookworm/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
