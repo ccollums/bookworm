@@ -20,6 +20,8 @@ The inspiration behind BookWorm came from a love for reading along with a love f
 
 ![Small GIF (400x210)](https://media.giphy.com/media/xlAPI3Ivd35vBBAFfk/giphy.gif)
 
+<img width="700" alt="gif of site" src="https://media.giphy.com/media/xlAPI3Ivd35vBBAFfk/giphy.gif">
+
 
 
 ## Technologies
