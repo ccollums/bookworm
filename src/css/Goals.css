@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	margin: 5em;
+	margin: 2em 5em 5em 5em;
 }
 
 .goal-sentence p {
@@ -17,6 +17,11 @@
   .goal-sentence p {
 		text-align: center;
 	}
+
+	.goal-sentence {
+		margin: 2em;
+	}
+
 }
 
 @media screen and (max-width: 487px) {
@@ -31,6 +36,6 @@
 
 @media screen and (max-width: 375px) {
   .goal-sentence {
-		margin: 3em;
+		margin: 2em;
 	}
 }

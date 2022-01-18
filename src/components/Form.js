@@ -14,10 +14,6 @@ const Form = ({ addGoal }) => {
 			setError(false)
 			addGoal(Number(goalInput))
 		}
-		clearInput()
-	}
-
-	const clearInput = () => {
 		setGoalInput('')
 	}
 
@@ -28,7 +24,7 @@ const Form = ({ addGoal }) => {
 				name='goal'
 				placeholder='change goal'
 				value={goalInput}
-				onChange={e => setGoalInput(e.target.value)}/>
+				onChange={e => setGoalInput(e.target.value)} />
 			<button onClick={(e => submitGoal(e))}>Submit</button>
 			{error ? <p className='error'>Please add a goal!</p> : <p style={{ opacity: "0" }}>Error placeholder</p>}
 		</form>
@@ -39,5 +35,5 @@ const Form = ({ addGoal }) => {
 export default Form;
 
 Form.propTypes = {
-  addGoal: propTypes.func.isRequired,
+	addGoal: propTypes.func.isRequired,
 };

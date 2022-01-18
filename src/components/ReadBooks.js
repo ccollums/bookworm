@@ -1,8 +1,7 @@
 import React from 'react'
-import '../css/ReadBooks.css'
 import propTypes from 'prop-types';
 
-const ReadBooks = ({ image, title, book }) => {
+const ReadBooks = ({ image, title }) => {
 
 	return (
 		<section>
@@ -11,10 +10,9 @@ const ReadBooks = ({ image, title, book }) => {
 	)
 }
 
-export default ReadBooks; 
+export default ReadBooks;
 
 ReadBooks.propTypes = {
-  image: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-  book: propTypes.object.isRequired,
+	image: propTypes.string.isRequired,
+	title: propTypes.string.isRequired,
 };

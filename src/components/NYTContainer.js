@@ -5,11 +5,10 @@ import propTypes from 'prop-types';
 
 const NYTContainer = ({ nytBooks, addToMustReads }) => {
 
-
 	const displayBooks = nytBooks.map((book) => {
 		return <BestSellers
 			book={book}
-			key={book.rank} 
+			key={book.rank}
 			image={book.image}
 			title={book.title}
 			addToMustReads={addToMustReads}
@@ -23,9 +22,9 @@ const NYTContainer = ({ nytBooks, addToMustReads }) => {
 	)
 }
 
-export default NYTContainer; 
+export default NYTContainer;
 
 NYTContainer.propTypes = {
-  nytBooks: propTypes.array.isRequired,
+	nytBooks: propTypes.array.isRequired,
 	addToMustReads: propTypes.func.isRequired,
 };

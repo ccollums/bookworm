@@ -7,10 +7,10 @@ const Hamburger = () => {
 
 	return (
 		<section>
-			<div className={!open ? 'hamburger' : 'hamburger-active'} onClick={() => setOpen(!open)}>
+			<section className={!open ? 'hamburger' : 'hamburger-active'} onClick={() => setOpen(!open)}>
 				<span className={open ? 'bar bar1-active' : 'bar bar1'}></span>
 				<span className={open ? 'bar bar2-active' : 'bar bar2'}></span>
-			</div>
+			</section>
 			<ul className={!open ? 'nav-menu' : 'nav-menu-active'}>
 				<div className='nav-item'>
 					<Link to={'/'} className='links' onClick={() => setOpen(!open)}>Home</Link>
