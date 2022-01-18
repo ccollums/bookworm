@@ -61,23 +61,26 @@ Scroll down for screenshots:
 
 ### Landing Page 
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 56 50 PM" src="https://user-images.githubusercontent.com/86894344/150009864-f0c433dc-ce68-4360-b950-02fda99c004a.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 22 51 PM" src="https://user-images.githubusercontent.com/86894344/150013548-c8ef2b90-ac02-46b4-b851-036c4b7d87f7.png">
+
 
 ### Add Goal 
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 58 00 PM" src="https://user-images.githubusercontent.com/86894344/150010535-a88285b4-5865-4d31-a5ed-b6d94f863262.png">
+<img width="700" alt="Screen Shot 2022-01-18 at 1 23 50 PM" src="https://user-images.githubusercontent.com/86894344/150013578-36e676c8-033c-4bd6-b166-d776cc7e32aa.png">
 
 ### Must Reads Page
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 57 03 PM" src="https://user-images.githubusercontent.com/86894344/150009928-1999ea2b-5759-40b8-93b4-3f6b9bdba840.png">
+<img width="1433" alt="Screen Shot 2022-01-18 at 1 23 08 PM" src="https://user-images.githubusercontent.com/86894344/150013623-51732ce1-90a6-49a3-aa92-add954a81def.png">
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 58 36 PM" src="https://user-images.githubusercontent.com/86894344/150010509-b70bb32b-e528-401b-95b8-426fb0c090a1.png">
+<img width="1434" alt="Screen Shot 2022-01-18 at 1 24 11 PM" src="https://user-images.githubusercontent.com/86894344/150013654-ad5dc727-9f55-4403-9714-26d319e09f94.png">
+
 
 ### Completed Books Page 
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 57 17 PM" src="https://user-images.githubusercontent.com/86894344/150010131-f03686b6-a83a-476a-8f8d-bfb581ae8929.png">
+<img width="1434" alt="Screen Shot 2022-01-18 at 1 23 21 PM" src="https://user-images.githubusercontent.com/86894344/150013687-4d85096e-099c-4ae1-8552-edd932310410.png">
 
-<img width="700" alt="Screen Shot 2022-01-18 at 12 58 44 PM" src="https://user-images.githubusercontent.com/86894344/150010477-955bf4e0-63e4-4f79-9581-b679b2a90abb.png">
+<img width="1433" alt="Screen Shot 2022-01-18 at 1 24 25 PM" src="https://user-images.githubusercontent.com/86894344/150013704-477ff89a-c98c-47f4-a6c0-9e8c1e16a3fa.png">
+
 
 ### About Page 
 
