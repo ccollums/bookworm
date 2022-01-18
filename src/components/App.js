@@ -69,7 +69,12 @@ const App = () => {
 
   const clearMustReads = () => {
     localStorage.clear()
-    setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [...userData.readList] })
+    setUserData({ goal: 0, readBooks: userData.readBooks, mustReads: [], readList: [...userData.readList] })
+  }
+
+  const clearReadBooks = () => {
+    localStorage.clear()
+    setUserData({ goal: userData.goal, readBooks: 0, mustReads: [...userData.mustReads], readList: [] })
   }
 
   return (
@@ -95,7 +100,7 @@ const App = () => {
         </React.Fragment>}/>
         <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
-        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal}/>}/>
+        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal} clearReadBooks={clearReadBooks}/>}/>
         <Route path='/:invalidURL' element={<ErrorPage />}/>
       </Routes>
     </section>

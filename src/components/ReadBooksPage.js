@@ -7,7 +7,7 @@ import Goals from './Goals'
 import background from '../images/background.png'
 import propTypes from 'prop-types';
 
-const ReadBooksPage = ({ readList, goal, readBooks }) => {
+const ReadBooksPage = ({ readList, goal, readBooks, clearReadBooks }) => {
 	return (
 		<section className='read-books-page'>
 			<div className='left-side' style={{ backgroundImage: `url(${background})`}}>
@@ -15,6 +15,7 @@ const ReadBooksPage = ({ readList, goal, readBooks }) => {
 				<div className='page-info'>
 					<h2>Your Read Books</h2>
 					<Goals goal={goal} readBooks={readBooks}/>
+					<button className='clear-button'onClick={() => clearReadBooks()}>Clear All Read Books</button>
 					<div className='bottom-box'>
 						<p>Look how far you've come!</p>
 					</div>
@@ -33,5 +34,6 @@ export default ReadBooksPage;
 ReadBooksPage.propTypes = {
   readList: propTypes.array.isRequired,
   goal: propTypes.number.isRequired,
-	readBooks: propTypes.number.isRequired
+	readBooks: propTypes.number.isRequired,
+	clearReadBooks: propTypes.func.isRequired
 };
