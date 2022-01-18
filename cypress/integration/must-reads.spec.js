@@ -38,6 +38,11 @@ describe('must reads page', () => {
 		cy.get('.goal-sentence > :nth-child(2)').contains(1)
 	})
 
+	it('when a book is clicked it will be removed from the page', () => {
+		cy.get('.book-cover').click()
+		cy.get('.right-side > p').should('be.visible')
+	})
+
 	it('When the clear button gets clicked, it will clear the goals and must reads', () => {
 		cy.get('.clear-button').click()
 		cy.get('.goal-sentence > :nth-child(2)').contains(0)
