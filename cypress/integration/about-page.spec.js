@@ -1,4 +1,4 @@
-describe('main page', () => {
+describe('about page', () => {
 	beforeEach(() => {
 		cy.fixture('./books.json').then((allBooks) => {
 			cy.intercept('GET', 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z', {
@@ -7,7 +7,7 @@ describe('main page', () => {
 			})
 			cy.visit('http://localhost:3000/#/');
 			cy.get('.hamburger').click()
-			cy.get(':nth-child(3) > .links').click()
+			cy.get(':nth-child(4) > .links').click()
 		})
 	})
 
@@ -22,7 +22,8 @@ describe('main page', () => {
 		cy.get('.hamburger').click()
 		cy.get(':nth-child(1) > .links').contains('Home')
 		cy.get(':nth-child(2) > .links').contains('Must Reads')
-		cy.get(':nth-child(3) > .links').contains('About')
+		cy.get(':nth-child(3) > .links').contains('Completed Books')
+		cy.get(':nth-child(4) > .links').contains('About')
 	})
 
 	it('should be able to click hamburger button and go to another page', () => {

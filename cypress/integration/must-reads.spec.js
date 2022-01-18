@@ -1,4 +1,4 @@
-describe('main page', () => {
+describe('must reads page', () => {
 	beforeEach(() => {
 		cy.fixture('./books.json').then((allBooks) => {
 			cy.intercept('GET', 'https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=7BEqjWAPVc0JKC492JBAzIE04gAJFh2z', {
@@ -21,7 +21,7 @@ describe('main page', () => {
 		cy.get('.goal-sentence > :nth-child(1)').contains('read')
 		cy.get('.goal-sentence > :nth-child(2)').contains(0)
 		cy.get('.goal-sentence > :nth-child(3)').contains('of your')
-		cy.get('.goal-sentence > :nth-child(4)').contains(0)
+		cy.get('.goal-sentence > :nth-child(4)').contains(10)
 		cy.get('.goal-sentence > :nth-child(5)').contains('goal')
 		cy.get('button').should('be.visible')
 		cy.get('.bottom-box').contains(`Click books you've completed to add to your goal`)
@@ -29,7 +29,8 @@ describe('main page', () => {
 		cy.get('.hamburger')
 		cy.get(':nth-child(1) > .links').contains('Home')
 		cy.get(':nth-child(2) > .links').contains('Must Reads')
-		cy.get(':nth-child(3) > .links').contains('About')
+		cy.get(':nth-child(3) > .links').contains('Completed Books')
+		cy.get(':nth-child(4) > .links').contains('About')
 	})
 
 	it('should be able to click one of the books and it update the books read goal', () => {
