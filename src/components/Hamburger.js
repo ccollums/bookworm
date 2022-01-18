@@ -19,6 +19,9 @@ const Hamburger = () => {
 					<Link to={'/must-reads'} className='links' onClick={() => setOpen(!open)}>Must Reads</Link>
 				</div>
 				<div className='nav-item'>
+					<Link to={'/read-books'} className='links' onClick={() => setOpen(!open)}>Completed Books</Link>
+				</div>
+				<div className='nav-item'>
 					<Link to={'/about'} className='links' onClick={() => setOpen(!open)}>About</Link>
 				</div>
 			</ul>

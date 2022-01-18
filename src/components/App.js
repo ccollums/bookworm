@@ -5,6 +5,7 @@ import Form from './Form'
 import Nav from './Nav'
 import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
+import ReadBooksPage from './ReadBooksPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
 import ErrorPage from './ErrorPage.js'
@@ -64,6 +65,7 @@ const App = () => {
   }
 
   const clearMustReads = () => {
+    localStorage.clear()
     setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [] })
   }
 
@@ -90,6 +92,7 @@ const App = () => {
         </React.Fragment>}/>
         <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
+        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal}/>}/>
         <Route path='/:invalidURL' element={<ErrorPage />}/>
       </Routes>
     </section>
