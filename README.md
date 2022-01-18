@@ -53,25 +53,62 @@ Scroll down for screenshots:
 - [Landing Page](#Landing-Page)
 - [Add Goal](#Add-Goal)
 - [Must Reads Page](#Must-Reads-Page)
+- [Completed Books Page](#Completed-Books-Page)
 - [About Page](#About-Page)
+- [Drop Down Menu](#Drop-Down-Menu)
 - [Error Handling](#Error-Handling)
 - [Responsive Design](#Responsive-Design)
 
 ### Landing Page 
 
+<img width="700" alt="Screen Shot 2022-01-18 at 12 56 50 PM" src="https://user-images.githubusercontent.com/86894344/150009864-f0c433dc-ce68-4360-b950-02fda99c004a.png">
 
 ### Add Goal 
 
+<img width="700" alt="Screen Shot 2022-01-18 at 12 58 00 PM" src="https://user-images.githubusercontent.com/86894344/150010535-a88285b4-5865-4d31-a5ed-b6d94f863262.png">
 
 ### Must Reads Page
 
+<img width="700" alt="Screen Shot 2022-01-18 at 12 57 03 PM" src="https://user-images.githubusercontent.com/86894344/150009928-1999ea2b-5759-40b8-93b4-3f6b9bdba840.png">
+
+<img width="700" alt="Screen Shot 2022-01-18 at 12 58 36 PM" src="https://user-images.githubusercontent.com/86894344/150010509-b70bb32b-e528-401b-95b8-426fb0c090a1.png">
+
+### Completed Books Page 
+
+<img width="700" alt="Screen Shot 2022-01-18 at 12 57 17 PM" src="https://user-images.githubusercontent.com/86894344/150010131-f03686b6-a83a-476a-8f8d-bfb581ae8929.png">
+
+<img width="700" alt="Screen Shot 2022-01-18 at 12 58 44 PM" src="https://user-images.githubusercontent.com/86894344/150010477-955bf4e0-63e4-4f79-9581-b679b2a90abb.png">
+
 ### About Page 
 
+<img width="700" alt="Screen Shot 2022-01-18 at 12 57 32 PM" src="https://user-images.githubusercontent.com/86894344/150010158-51e1708a-5a72-4240-8790-6842f870b93d.png">
+
+### Drop Down Menu
+
+<img width="700" alt="Screen Shot 2022-01-18 at 12 58 12 PM" src="https://user-images.githubusercontent.com/86894344/150010208-9c8cff7b-ae21-4bcc-8ecf-cdf77f045047.png">
 
 ### Error Handling 
 
+<img width="700" alt="Screen Shot 2022-01-18 at 1 07 42 PM" src="https://user-images.githubusercontent.com/86894344/150011095-a3159158-5d32-491d-a583-f20a2b992a0e.png">
+
+<img width="700" alt="Screen Shot 2022-01-18 at 1 08 57 PM" src="https://user-images.githubusercontent.com/86894344/150011099-549f2aa4-79c6-41e8-a1b7-73edfdad3e6b.png">
 
 ### Responsive Design
+<table>
+<td><img width="305" alt="Screen Shot 2022-01-18 at 12 59 35 PM" src="https://user-images.githubusercontent.com/86894344/150010348-f29139b0-fce8-4630-88e9-32ba84181569.png"></td>
+
+<td><img width="304" alt="Screen Shot 2022-01-18 at 12 59 48 PM" src="https://user-images.githubusercontent.com/86894344/150010361-bffaeee5-c81f-4cb9-94c7-3d9a9e090d9f.png"></td>
+
+<td><img width="305" alt="Screen Shot 2022-01-18 at 1 00 00 PM" src="https://user-images.githubusercontent.com/86894344/150010384-2ece3fe2-b080-486b-975d-9e9e27858bfe.png"></td>
+
+<td><img width="305" alt="Screen Shot 2022-01-18 at 1 00 10 PM" src="https://user-images.githubusercontent.com/86894344/150010401-787dff2c-2f98-475c-a7b3-3c6023c22ea3.png"></td>
+
+<td><img width="305" alt="Screen Shot 2022-01-18 at 1 00 21 PM" src="https://user-images.githubusercontent.com/86894344/150010411-eeb27ae8-bb23-479b-a2e8-547b08cb3110.png"></td>
+
+<td><img width="307" alt="Screen Shot 2022-01-18 at 1 09 17 PM" src="https://user-images.githubusercontent.com/86894344/150011065-09e08499-ae25-4528-958f-0a96d254f26b.png"></td>
+
+<td><img width="306" alt="Screen Shot 2022-01-18 at 1 07 25 PM" src="https://user-images.githubusercontent.com/86894344/150011079-f8b07344-453c-4321-aeca-ef1dc4305edf.png"></td>
+</table>
 
 
 ## Wins And Challenges 
