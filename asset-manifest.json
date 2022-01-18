@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/bookworm/static/css/main.96b2385a.css",
-    "main.js": "/bookworm/static/js/main.c75309be.js",
-    "static/media/river.png": "/bookworm/static/media/river.498d3e7f1841b8247738.png",
-    "static/media/greatalone.png": "/bookworm/static/media/greatalone.e76018077774a6417dbb.png",
-    "static/media/Addie.png": "/bookworm/static/media/Addie.d60e2e16c289e8ab118a.png",
-    "static/media/untamed.png": "/bookworm/static/media/untamed.a848ce09fb2847f67640.png",
-    "static/media/incold.png": "/bookworm/static/media/incold.3d53e9af9eb190ffb129.png",
-    "static/media/nightingale.png": "/bookworm/static/media/nightingale.73e8ad8707363b96c336.png",
-    "static/media/crawdads .png": "/bookworm/static/media/crawdads .b6459aba95e61ad0a022.png",
-    "static/media/vanishing.png": "/bookworm/static/media/vanishing.3434712c9585e728732b.png",
-    "static/media/cabin10.png": "/bookworm/static/media/cabin10.a3046322c63049429618.png",
-    "static/media/eragon.png": "/bookworm/static/media/eragon.225314212c4742fe9cbc.png",
-    "static/media/dante .png": "/bookworm/static/media/dante .e2b1e31de2b4e429b491.png",
-    "static/media/carly.png": "/bookworm/static/media/carly.eadb1108685a1b5e649b.png",
-    "static/media/handmaid.png": "/bookworm/static/media/handmaid.4d14e330b0c6c45d1451.png",
-    "static/media/background.png": "/bookworm/static/media/background.4380e73bb0f32665b552.png",
-    "static/media/none.png": "/bookworm/static/media/none.4d685b9ad0d891d89727.png",
-    "static/media/dune.png": "/bookworm/static/media/dune.887846fdf4b7e69c6e51.png",
-    "index.html": "/bookworm/index.html",
-    "main.96b2385a.css.map": "/bookworm/static/css/main.96b2385a.css.map",
-    "main.c75309be.js.map": "/bookworm/static/js/main.c75309be.js.map"
+    "main.css": "/static/css/main.e69bd9ae.css",
+    "main.js": "/static/js/main.07f0f22e.js",
+    "static/media/river.png": "/static/media/river.498d3e7f1841b8247738.png",
+    "static/media/greatalone.png": "/static/media/greatalone.e76018077774a6417dbb.png",
+    "static/media/Addie.png": "/static/media/Addie.d60e2e16c289e8ab118a.png",
+    "static/media/untamed.png": "/static/media/untamed.a848ce09fb2847f67640.png",
+    "static/media/incold.png": "/static/media/incold.3d53e9af9eb190ffb129.png",
+    "static/media/nightingale.png": "/static/media/nightingale.73e8ad8707363b96c336.png",
+    "static/media/crawdads .png": "/static/media/crawdads .b6459aba95e61ad0a022.png",
+    "static/media/vanishing.png": "/static/media/vanishing.3434712c9585e728732b.png",
+    "static/media/cabin10.png": "/static/media/cabin10.a3046322c63049429618.png",
+    "static/media/eragon.png": "/static/media/eragon.225314212c4742fe9cbc.png",
+    "static/media/dante .png": "/static/media/dante .e2b1e31de2b4e429b491.png",
+    "static/media/carly.png": "/static/media/carly.eadb1108685a1b5e649b.png",
+    "static/media/handmaid.png": "/static/media/handmaid.4d14e330b0c6c45d1451.png",
+    "static/media/background.png": "/static/media/background.4380e73bb0f32665b552.png",
+    "static/media/none.png": "/static/media/none.4d685b9ad0d891d89727.png",
+    "static/media/dune.png": "/static/media/dune.887846fdf4b7e69c6e51.png",
+    "index.html": "/index.html",
+    "main.e69bd9ae.css.map": "/static/css/main.e69bd9ae.css.map",
+    "main.07f0f22e.js.map": "/static/js/main.07f0f22e.js.map"
   },
   "entrypoints": [
-    "static/css/main.96b2385a.css",
-    "static/js/main.c75309be.js"
+    "static/css/main.e69bd9ae.css",
+    "static/js/main.07f0f22e.js"
   ]
 }
