@@ -1,6 +1,6 @@
 # BookWorm
 
-###### For all the book lovers...
+###### For all the book lovers and goal setters out there...
 
 ## Table of Contents
   - [Introduction](#Introduction)  
@@ -14,6 +14,9 @@
 
 ## Introduction 
 
+BookWorm is a web application created for a user to view the current New York Time's fiction hardcover best seller's list and have the ability to add books to a must read list, create a reading goal, and add to their goal/completed books. This application was part of a 5 day project at the Turing School of Software and Design to demonstrate my ability with React, React Router and Cypress testing. 
+
+The inspiration behind BookWorm came from a love for reading along with a love for setting goals. Sites like GoodReads can feel overwhelming, with tons of information and a cluttered design. BookWorm has a very minimalist design in order to easily see the current top books, to make it easy to choose your next read. Goal setters, like myself, love to see their goal right in front of their face, BookWorm makes it easy to see your goal and how close you are to achieving it. 
 
 ## Technologies
   - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -75,12 +78,21 @@ Scroll down for screenshots:
 
 ### Wins
 
+- The overall design of the application was a huge win for me. Having the grid of books on the right side, with a static left side was something that I envisioned from the beginning and I was very happy to see it come to life the way that I anticipated. 
+- Making the transition from class/functional components to only using Hooks throughout the application. 
 
 ### Challenges 
 
+- Using local storage with React and hooks raised some strange issues that I had to work through. For example, if local storage was not cleared and only state was updated to "clear" the data, the application was not working properly on page refresh. Once I changed this functionality to also clear local storage and not simply update state it solved the problem! 
+- I wanted the book container to have an overflow: scroll so that the whole page was visible at all times. This works great when the browser is full size, but once the application is opened on a phone the responsive design moves the book container to the bottom of the page. The overflow: scroll causes some confusing scrolling on a mobile device. This is something I struggled with and even though it is functional, it is something I would like to improve in the future. 
+
   
 ## Future Improvements
-Now that our MVP functionality has been built out, there is still so much we would love to add in the future! 
+Now that my MVP functionality has been built out, there is still so much I would love to add in the future! Future extensions may include:
+
+- Adding a hover effect to the book covers that creates a card flip with the book description on the opposite side. This will make it easier for a user to see what a book is all about before adding to their must reads page. 
+- Adding a link on each book to take the user to amazon to purchase the book of their choosing. 
+- Adding the ability to see different best seller's lists from different dates or see different types of lists other than only the hard cover list. 
 
 ## Author
 
