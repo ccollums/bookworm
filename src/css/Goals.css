@@ -1,6 +1,6 @@
 .goal-sentence {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 	margin: 2em 5em 5em 5em;
 }
