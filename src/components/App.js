@@ -69,7 +69,7 @@ const App = () => {
 
   const clearMustReads = () => {
     localStorage.clear()
-    setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [] })
+    setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [...userData.readList] })
   }
 
   return (
