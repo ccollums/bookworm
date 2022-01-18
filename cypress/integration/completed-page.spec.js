@@ -26,6 +26,7 @@ describe('completed page', () => {
 		cy.get('.goal-sentence > :nth-child(3)').contains('of your')
 		cy.get('.goal-sentence > :nth-child(4)').contains(10)
 		cy.get('.goal-sentence > :nth-child(5)').contains('goal')
+		cy.get('.clear-button').should('be.visible')
 		cy.get('.bottom-box').contains(`Look how far you've come!`)
 		cy.get('.hamburger')
 		cy.get(':nth-child(1) > .links').contains('Home')
@@ -36,6 +37,12 @@ describe('completed page', () => {
 
 	it('should display the book that was marked read on must read page', () => {
 		cy.get('.book-cover').should('be.visible')
+	})
+
+	it('when the clear button is clicked it should delete the book cover and books read part of the goal', () => {
+		cy.get('.clear-button').click()
+		cy.get('.right-side > p').should('be.visible')
+		cy.get('.goal-sentence > :nth-child(2)').contains(0)
 	})
 
 })
