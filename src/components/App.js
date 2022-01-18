@@ -5,6 +5,7 @@ import Form from './Form'
 import Nav from './Nav'
 import NYTContainer from './NYTContainer'
 import MustReadsPage from './MustReadsPage'
+import ReadBooksPage from './ReadBooksPage'
 import AboutPage from './AboutPage'
 import Goals from './Goals'
 import ErrorPage from './ErrorPage.js'
@@ -17,7 +18,7 @@ const App = () => {
   const [userData, setUserData] = useState(() => {
     const saved = localStorage.getItem("storedData");
     const existingUserData = JSON.parse(saved);
-    return existingUserData || { goal: 0, readBooks: 0, mustReads: [] }
+    return existingUserData || { goal: 0, readBooks: 0, mustReads: [], readList: [] }
   })
 
   const fetchBooks = async () => {
@@ -57,12 +58,15 @@ const App = () => {
     }
   }
 
-  const addToReadBooks = () => {
-    setUserData({...userData, readBooks: userData.readBooks + 1})
+  const addToReadBooks = (completedBook) => {
+    if (!userData.readList.includes(completedBook)) {
+      setUserData({...userData, readBooks: userData.readBooks + 1, readList: [...userData.readList, completedBook]})
+    }
   }
 
   const clearMustReads = () => {
-    setUserData({ goal: 0, readBooks: 0, mustReads: [] })
+    localStorage.clear()
+    setUserData({ goal: 0, readBooks: 0, mustReads: [], readList: [] })
   }
 
   return (
@@ -88,6 +92,7 @@ const App = () => {
         </React.Fragment>}/>
         <Route path='/must-reads' element={<MustReadsPage mustReads={userData.mustReads} goal={userData.goal} addToReadBooks={addToReadBooks} readBooks={userData.readBooks} clearMustReads={clearMustReads}/>}/>
         <Route path='/about' element={<AboutPage />}/>
+        <Route path='/read-books' element={<ReadBooksPage readList={userData.readList} readBooks={userData.readBooks} goal={userData.goal}/>}/>
         <Route path='/:invalidURL' element={<ErrorPage />}/>
       </Routes>
     </section>
