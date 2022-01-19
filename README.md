@@ -1,6 +1,6 @@
 # BookWorm
 
-###### [For all the book lovers and goal setters out there...]((https://ccollums.github.io/bookworm/))
+[For all the book lovers and goal setters out there...]((https://ccollums.github.io/bookworm/))
 
 ## Table of Contents
   - [Introduction](#Introduction)  
