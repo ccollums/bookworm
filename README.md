@@ -14,7 +14,7 @@
 
 ## Introduction 
 
-BookWorm is a web application created for a user to view the current New York Time's fiction hardcover best seller's list and have the ability to add books to a must read list, create a reading goal, and add to their goal/completed books. This application was part of a 5 day project at the Turing School of Software and Design to demonstrate my ability with React, React Router and Cypress testing. 
+BookWorm is a web application created for a user to view the current New York Time's fiction hardcover best seller's list and have the ability to add books to a must read list, create a reading goal, and add to their goal/completed books. This application was part of a 5 day project at the Turing School of Software and Design to demonstrate my ability with React, React Router RESTful API's and Cypress testing. The New York Times Books API was used for all book data and local storage was used so that user data would persist on page refresh. 
 
 The inspiration behind BookWorm came from a love for reading along with a love for setting goals. Sites like GoodReads can feel overwhelming, with tons of information and a cluttered design. BookWorm has a very minimalist design in order to easily see the current top books, to make it easy to choose your next read. Goal setters, like myself, love to see their goal right in front of their face, BookWorm makes it easy to see your goal and how close you are to achieving it. 
 
